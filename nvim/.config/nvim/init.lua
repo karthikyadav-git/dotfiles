@@ -10,3 +10,9 @@ require("config.telescope")
 -- treesitter
 require("config.treesitter")
 
+-- neotree
+require("neo-tree").setup()
+
+-- keymaps
+require("config.keymaps")
+
