@@ -6,3 +6,7 @@ require("config.colorscheme")
 
 -- telescope
 require("config.telescope")
+
+-- treesitter
+require("config.treesitter")
+
