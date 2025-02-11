@@ -4,3 +4,5 @@ require("config.lazy")
 -- colorscheme
 require("config.colorscheme")
 
+-- telescope
+require("config.telescope")
