@@ -1,18 +1,8 @@
 -- Lazy package manager
 require("config.lazy")
 
--- colorscheme
-require("config.colorscheme")
+require("colorscheme")
 
--- telescope
-require("config.telescope")
+require("config.plugins")
 
--- treesitter
-require("config.treesitter")
-
--- neotree
-require("neo-tree").setup()
-
--- keymaps
-require("config.keymaps")
-
+require("keymaps")

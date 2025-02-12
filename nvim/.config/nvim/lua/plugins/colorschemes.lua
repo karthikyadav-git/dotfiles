@@ -3,7 +3,6 @@ return {
 	---@colorscheme tokyonight
 	{
 		"folke/tokyonight.nvim",
-		lazy = false,
 		priority = 1000,
 		opts = {},
 	},
