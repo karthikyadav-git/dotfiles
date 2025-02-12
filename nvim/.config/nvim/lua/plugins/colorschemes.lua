@@ -2,8 +2,8 @@ return {
 
 	---@colorscheme tokyonight
 	{
-		"folke/tokyonight.nvim",
-		priority = 1000,
+    "folke/tokyonight.nvim",
+    priority = 1000,
 		opts = {},
 	},
 

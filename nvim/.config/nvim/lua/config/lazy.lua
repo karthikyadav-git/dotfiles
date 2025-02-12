@@ -27,9 +27,9 @@ require("lazy").setup({
     { import = "plugins" },
   },
   defaults = {
-	lazy = true,
-	version = false
-	},
+    lazy = true,
+    version = false
+  },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { "tokyonight", "habamax" } },
