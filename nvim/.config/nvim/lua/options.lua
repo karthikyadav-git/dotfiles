@@ -4,6 +4,10 @@ vim.cmd.set("tabstop=2")
 vim.cmd.set("softtabstop=2")
 vim.cmd.set("shiftwidth=2")
 
+-- Numbering options
+vim.cmd.set("number")
+vim.cmd.set("relativenumber")
+
 -- LaTeX options
 vim.g.vimtex_view_method = "zathura"
 vim.g.vimtex_compiler_method = "latexmk"
