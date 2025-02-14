@@ -3,12 +3,7 @@ return {
 	dependencies = { "saghen/blink.cmp" },
 
 	opts = {
-		servers = {
-			lua_ls = {},
-			ts_ls = {},
-			pyright = {},
-			clangd = {},
-		},
+		servers = require("config.lsp").lsp,
 	},
 
 	config = function(_, opts)
