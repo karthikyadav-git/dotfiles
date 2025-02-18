@@ -16,14 +16,10 @@ return {
 
 		opts = {
 			servers = {
-				javascript = { "eslint_d" },
-				python = { "flake8" },
-				c = { "cpplint" },
-				cpp = { "cpplint" },
-				sh = { "shellcheck" },
-				bash = { "shellcheck" },
-				zsh = { "shellcheck" },
-				lua = { "luacheck" },
+				lua_ls = {},
+				ts_ls = {},
+				pyright = {},
+				clangd = {},
 			},
 		},
 
