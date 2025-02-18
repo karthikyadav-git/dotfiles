@@ -3,7 +3,16 @@ return {
 	dependencies = { "saghen/blink.cmp" },
 
 	opts = {
-		servers = require("config.lsp").lsp,
+		servers = {
+			javascript = { "eslint_d" },
+			python = { "flake8" },
+			c = { "cpplint" },
+			cpp = { "cpplint" },
+			sh = { "shellcheck" },
+			bash = { "shellcheck" },
+			zsh = { "shellcheck" },
+			lua = { "luacheck" },
+		},
 	},
 
 	config = function(_, opts)

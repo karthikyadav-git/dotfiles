@@ -1,7 +1,16 @@
 return {
 	"mfussenegger/nvim-lint",
 	config = function()
-		require("lint").linters_by_ft = require("config.linters")
+		require("lint").linters_by_ft = {
+			javascript = { "eslint_d" },
+			python = { "flake8" },
+			c = { "cpplint" },
+			cpp = { "cpplint" },
+			sh = { "shellcheck" },
+			bash = { "shellcheck" },
+			zsh = { "shellcheck" },
+			lua = { "luacheck" },
+		}
 
 		vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost", "InsertLeave" }, {
 			callback = function()
