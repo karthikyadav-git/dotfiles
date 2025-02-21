@@ -1,12 +1,12 @@
 return {
 	{
 		"williamboman/mason.nvim",
-    event = "LazyFile",
+    cmd = "Mason",
 		opts = {},
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
-    event = "LazyFile",
+    event = "VeryLazy",
 		opts = {
 			ensure_installed = {},
 			automatic_installation = true,
@@ -16,7 +16,7 @@ return {
 		"neovim/nvim-lspconfig",
 		dependencies = { "saghen/blink.cmp" },
 
-    event = "LazyFile",
+    event = "VeryLazy",
 		opts = {
 			servers = {
 				lua_ls = {},

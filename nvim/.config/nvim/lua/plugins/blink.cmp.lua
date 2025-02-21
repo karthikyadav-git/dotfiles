@@ -3,7 +3,7 @@ return {
 	dependencies = "rafamadriz/friendly-snippets",
 	version = "*",
 
-	event = "LazyFile",
+  event = "InsertEnter",
 	opts = {
 		keymap = { preset = "super-tab" },
 
