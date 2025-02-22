@@ -19,3 +19,6 @@ HISTSIZE=1000
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
