@@ -1,8 +1,11 @@
 # We will use Starship as our theme for ZSH.
-# To set starship as our theme, we need to install starship
-# from pacman by using the command:
-# $ sudo pacman -S starship
-# then we initialize it as our theme.
+
+# Install Starship on our system if not already installed
+if [[ ! -x "$(command -v starship)" ]]; then
+  curl -sS https://starship.rs/install.sh | sh
+fi
+
+# Initialize starship
 eval "$(starship init zsh)"
 
 # Starship theme configuration file path.
