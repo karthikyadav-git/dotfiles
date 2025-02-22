@@ -23,3 +23,16 @@ HISTDUP=erase
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
+# fzf
+if [[ -x "$(command -v fzf)" ]]; then
+
+  # evaluate 'fzf' into shell
+  eval "$(fzf --zsh)"
+
+  # do not show default completion menu
+  zstyle ':completion:*' menu no
+
+  # show preview while cd
+  zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+
+fi
