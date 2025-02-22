@@ -12,3 +12,7 @@ eval "$(starship init zsh)"
 # We can use this file to configure the starship theme.
 export STARSHIP_CONFIG=~/.config/zsh/starship.toml
 
+# Import preset configuration if not already present
+if [[ ! -f $STARSHIP_CONFIG ]]; then
+  starship preset nerd-font-symbols -o $STARSHIP_CONFIG
+fi
