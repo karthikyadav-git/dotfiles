@@ -1,11 +1,7 @@
 return {
 	{
 		"lervag/vimtex",
-		ft = {
-			"tex",
-			"latex",
-			"bib",
-		},
+		lazy = false,
 		config = function() end,
 	},
 }
