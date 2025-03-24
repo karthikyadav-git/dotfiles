@@ -11,6 +11,19 @@ vim.cmd.set("relativenumber")
 -- LaTeX options
 vim.g.vimtex_view_method = "zathura"
 vim.g.vimtex_compiler_method = "latexmk"
+vim.g.vimtex_compiler_latexmk = {
+	build_dir = "build", -- Optional: specify a build directory (default is '')
+	callback = 1, -- Enable callback (for custom actions after compilation)
+	continuous = 1, -- Enable continuous compilation (auto-recompiles on save)
+	executable = "latexmk", -- Specify the executable (latexmk)
+	options = {
+		"-lualatex", -- Use LuaLaTeX
+		"-shell-escape", -- Enable shell escape for external tools
+		"-interaction=nonstopmode", -- Nonstop mode to avoid halting on errors
+		"-synctex=1", -- Enable SyncTeX for forward and inverse search
+		"-outdir=build", -- Force latexmk to use the 'build' directory
+	},
+}
 vim.cmd.set("conceallevel=2")
 vim.g.vimtex_syntax_conceal = {
 	math_bounds = 1,
