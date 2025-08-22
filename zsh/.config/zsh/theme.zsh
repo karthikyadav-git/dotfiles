@@ -16,3 +16,10 @@ export STARSHIP_CONFIG=~/.config/zsh/starship.toml
 if [[ ! -f $STARSHIP_CONFIG ]]; then
   starship preset nerd-font-symbols -o $STARSHIP_CONFIG
 fi
+
+# Add catppuccin color scheme
+export CATPPUCCIN_FLAVOR=./catppuccin_mocha-zsh-syntax-highlighting.zsh
+
+if [[ -f $CATPPUCCIN_FLAVOR ]]; then
+  source $CATPPUCCIN_FLAVOR
+fi

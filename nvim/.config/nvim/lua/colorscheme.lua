@@ -2,4 +2,4 @@
 -- Available options:
 -- - "tokyonight"
 -- - "catppuccin"
-vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme("catppuccin")

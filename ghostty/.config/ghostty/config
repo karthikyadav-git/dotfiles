@@ -44,7 +44,7 @@
 
 font-family = "JetBrains Mono"
 
-theme = "catppuccin-mocha"
+theme = catppuccin-mocha.conf
 
 shell-integration = zsh
 
