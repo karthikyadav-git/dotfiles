@@ -12,12 +12,11 @@ If you do not already have these packages installed on your system, you can do s
 - [-] On Arch Linux or any other distro based on Arch Linux
 
 ```bash
-$ sudo pacman -S git stow
+sudo pacman -S git stow
 ```
 
 - [-] On Debian/Ubuntu or any other such distro based on Debian
 
 ```bash
-$ sudo apt update && sudo apt install git stow
+sudo apt update && sudo apt install git stow
 ```
-
