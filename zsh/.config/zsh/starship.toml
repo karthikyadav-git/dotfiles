@@ -165,10 +165,11 @@ read_only_style = "fg:mantle bg:peach"
 "Downloads" = " "
 "Music" = "󰝚 "
 "Pictures" = " "
-"Developer" = "󰲋 "
+"Projects" = ""
 "Videos" = ""
-"dotfiles" = ""
 "Scripts" = "󱆃"
+"Vaults" = ""
+"Share" = ""
 
 [git_branch]
 symbol = ""
