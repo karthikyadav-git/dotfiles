@@ -2,7 +2,7 @@
 
 # TODO: List the plugins you want to install
 
-PLUGINS=(
+plugins=(
     zsh-users/zsh-syntax-highlighting
     zsh-users/zsh-completions
     zsh-users/zsh-autosuggestions
@@ -22,7 +22,7 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Install plugins
-for plugin in ${PLUGINS[@]}; do
+for plugin in ${plugins[@]}; do
   zinit light $plugin
 done
 
