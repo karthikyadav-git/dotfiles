@@ -1,8 +1,30 @@
-# Z SHEll provides us will various options that can be set using
+# INFO: Keybinding Setting
+
+# We can choose to use either emacs keybindings or vim keybindings.
+# Emacs is the default keybinding, which will be used if not 
+# set specifically.
+
+#bindkey -e     # set emacs keybindings
+bindkey -v      # set vim keybindings
+
+# End of lines configured by zsh-newuser-install
+
+
+# INFO: ZSH History Settings
+
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=1000
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+
+
+# INFO: ZSH OPTIONS
+
+# TODO: Z SHEll provides us will various options that can be set using
 # 'setopt <option_name>'
 # or unset using
 # 'unsetopt <option_name>
-# 
+# -
 # We can also leave an option to its default by not including the
 # option in this file.
 

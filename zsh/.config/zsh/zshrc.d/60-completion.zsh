@@ -1,29 +1,17 @@
-# We can choose to use either emacs keybindings or vim keybindings.
-# Emacs is the default keybinding, which will be used if not 
-# set specifically.
+# INFO: Settings for zsh completion.
 
-#bindkey -e	# set emacs keybindings
-bindkey -v	# set vim keybindings
-
-# End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/karthik/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
-compinit
+compinit -d "$HOME/.zcompdump"
 # End of lines added by compinstall
-
-# ZSH commands history settings
-HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=$HISTSIZE
-HISTDUP=erase
 
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
-# fzf
+# fzf-tab completion
 if [[ -x "$(command -v fzf)" ]]; then
 
   # evaluate 'fzf' into shell

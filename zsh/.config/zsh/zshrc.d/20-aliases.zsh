@@ -1,3 +1,5 @@
+# INFO: Create aliases here
+
 # Alias for lsd
 if [[ -x "$(command -v lsd)" ]]; then
   alias ls='lsd'
